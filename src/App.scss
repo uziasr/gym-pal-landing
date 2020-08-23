@@ -14,7 +14,7 @@ a {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   text-decoration: none;
-  
+
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -66,24 +66,79 @@ a {
 }
 
 .body {
-  display: flex;
-  justify-content: space-evenly;
-  width: 70%;
-  margin: 5% auto;
 
-  .body-image {
-    .phone-image {
-      height: 30rem;
+  width: 100%;
+  margin: 0% auto;
+  padding: 5% 0;
+  background: whitesmoke;
+
+  .body-wrap {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    margin: 0 auto;
+
+    // align-items: center;
+    .body-image {
+      .phone-image {
+        height: 35rem;
+      }
+    }
+
+    .body-text {
+      // width: 50%;
+      // background: dodgerblue;
+      // padding-right: 30%;
+
+      .body-title-text {
+        font-size: 40px;
+        align-self: flex-start;
+      }
     }
   }
+}
 
-  .body-text {
-    // width: 50%;
-    // background: dodgerblue;
-    // padding-right: 30%;
+.feature-section {
+  width: 100%;
+  padding: 1% 0 5% 0;
+  // background: rgba(63, 72, 240, 0.877);
+  background-image: linear-gradient(to right top, #3f48f0, #3550f4, #2958f8, #1a60fc, #0067ff);
+  align-self: center;
+  margin: 0 auto;
 
-    .body-title-text {
-      font-size: 40px;
+  .feature-section-title {
+    font-size: 40px;
+    color: white;
+    margin-bottom: 5%;
+  }
+
+  .features-wrap {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 auto;
+    align-items: center;
+    width: 80%;
+
+    .icon {
+      font-size: 50px;
+      color: white;
+    }
+
+    .feature {
+      width: 25%;
+      background: white;
+      border-radius: 25px;
+      margin: 0 5%;
+
+      .feature-title {
+        font-size: 28px;
+        font-weight: bold;
+      }
+
+      .feature-image {
+        height: 25rem;
+        padding-bottom: 10%;
+      }
     }
   }
 }
