@@ -7,8 +7,8 @@ const Home = () => {
         <div className="body" id="home">
             <div className="body-wrap">
                 <div className="body-text">
+                    <img className="home-image" src={gym} ></img>
                     <p className="body-title-text">Record all your workouts <br></br> Track your progression as precisely as possible</p>
-                    <img src={gym} width={"70%"}></img>
                 </div>
                 <div className="body-image">
                     <img src={stats} className="phone-image" alt="phone demo" />

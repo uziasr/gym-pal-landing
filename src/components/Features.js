@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import splits from '../splits.PNG'
 import exercise from '../exercise.PNG'
 import sets from '../sets.PNG'
@@ -41,15 +41,15 @@ const Features = () => {
             {/* <p className="feature-section-title">Let's Workout.</p> */}
             <div className="feature-root-wrap">
                 <div className="features-wrap">
-                    {/* <div onClick={() => active > 0 ? onArrowPress(-1) : null}><FaArrowCircleLeft style={{ fontSize: "50px", color: active > 0 ? "white" : "grey", cursor: "pointer" }} /></div> */}
+                    <div className="icon" onClick={() => active > 0 ? onArrowPress(-1) : null}><FaArrowCircleLeft style={{ fontSize: "50px", color: active > 0 ? "white" : "grey", cursor: "pointer" }} /></div>
                     {features.length > 0 ?
                         <div className="feature">
-                            {/* <p className="feature-title">{features[active].title}</p> */}
-                            <p>{features[active].description}</p>
+                            <p className="feature-title">{features[active].title}</p>
+                            <p className="feature-description-text">{features[active].description}</p>
                             <img className="feature-image" src={features[active].image} alt={features[active].title} />
                         </div>
                         : null}
-                    {/* <div onClick={() => active < 2 ? onArrowPress(1) : null}><FaArrowCircleRight style={{ fontSize: "50px", color: active < 2 ? "white" : "grey", cursor: "pointer" }} /></div> */}
+                    <div className="icon" onClick={() => active < 2 ? onArrowPress(1) : null}><FaArrowCircleRight style={{ fontSize: "50px", color: active < 2 ? "white" : "grey", cursor: "pointer" }} /></div>
                     {/* <div>
                          <p>Features</p>
                     </div> */}
@@ -58,7 +58,7 @@ const Features = () => {
                     <p className="feature-text-title">Workout Flow</p>
                     <div>
                         {features.map((feature, index) => (
-                            <div onClick={()=>setActive(index)} key={index} style={index === active ? { background: "#104981", cursor:"default" } : {}} className="feature-title-wrap">
+                            <div onClick={() => setActive(index)} key={index} style={index === active ? { background: "#104981", cursor: "default" } : {}} className="feature-title-wrap">
                                 <p style={index === active ? { color: "white" } : {}} className="feature-title-wrap-text">{feature.title}</p>
                             </div>
                         ))}
