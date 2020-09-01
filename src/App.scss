@@ -1,4 +1,4 @@
-$breakpoint-tablet: 900px;
+$breakpoint-tablet: 1000px;
 $breakpoint-phone: 720px;
 
 //768px
@@ -6,9 +6,9 @@ $breakpoint-phone: 720px;
 //   margin: 0;
 // }
 
-.App {
-  text-align: center;
-}
+// .App {
+//   text-align: center;
+// }
 
 .App-logo {
   height: 40vmin;
@@ -83,7 +83,7 @@ a {
   .body-wrap {
     display: flex;
     justify-content: space-evenly;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 
     // align-items: center;
@@ -105,10 +105,11 @@ a {
       .body-title-text {
         font-size: 40px;
         align-self: flex-start;
+        text-align: center;
       }
 
       .home-image {
-        width: 60%
+        width: 55%
       }
     }
   }
@@ -156,7 +157,7 @@ a {
         background: white;
         border-radius: 25px;
         margin: 0 3%;
-        padding: 7%;
+        padding: 8%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -164,6 +165,7 @@ a {
 
         .feature-description-text {
           font-size: 20px;
+          text-align: center;
         }
 
         .feature-title {
@@ -217,27 +219,71 @@ a {
 
 
 @media (max-width: $breakpoint-tablet) {
+
+  .body {
+
+
+    .body-wrap {
+      align-content: center;
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      width: 95%;
+
+      .body-text {
+        align-items: center;
+        align-content: center;
+        width: 60%;
+        margin: 0 auto;
+
+        .body-title-text {
+          font-size: 34px;
+          // text-align: left;
+        }
+
+        .home-image {
+          width: 390px;
+          text-align: center;
+        }
+      }
+    }
+  }
+
   .feature {
-    padding: 15% !important;
+    padding: 20% !important;
     display: flex;
     flex-direction: column;
     align-items: center;
     align-content: center;
 
   }
+
+  .body-title-text {
+    text-align: left;
+  }
 }
 
 @media (max-width: $breakpoint-phone) {
+  
+  .feature-section {
+    .feature-root-wrap {
+      width: 95%;
+      margin: 0 auto;
+    }
+  }
+  
   .feature {
     padding: 1% !important;
     align-self: center;
+    width:70% !important;
   }
 
   .icon {
     display: block !important;
   }
+
   .feature-section {
-    padding: 7.5% 0;
+    padding: 7.5% 0 !important;
   }
 
   .feature-text-wrap {
@@ -260,7 +306,9 @@ a {
     margin: 0;
   }
 
-
+  .body {
+    width: 100%;
+  }
 
   .body-wrap {
     flex-direction: column;
@@ -279,8 +327,8 @@ a {
       .home-image {
         // icon
         order: 1;
-        width: 70% !important;
-        margin-bottom: 4%;
+        width: 300px !important;
+        margin-bottom: 5%;
       }
     }
   }
