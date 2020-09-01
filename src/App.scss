@@ -197,7 +197,8 @@ a {
         margin-bottom: 3%;
         border-radius: 15px;
         cursor: pointer;
-        background: lightgrey;
+        // background: lightgrey;
+        background: #bec0ca;
 
 
 
@@ -309,6 +310,27 @@ a {
   .body-title-text {
     text-align: left;
   }
+
+.additional-root-wrap {
+  .additional-outer-wrap {
+    width: 95%;
+    .additional-wrap{
+      .additional-wrap-contents{
+        width: 28%;
+        .additional-title {
+
+        }
+        .additional-icon {
+
+        }
+        .additional-description {
+
+        }
+      }
+    }
+  }
+}
+
 }
 
 @media (max-width: $breakpoint-phone) {
@@ -317,11 +339,12 @@ a {
     .feature-root-wrap {
       width: 95%;
       margin: 0 auto;
+      padding: 7.5% 0 !important;
     }
   }
 
   .phone-image {
-    height: 35rem !important;
+    height: 30rem !important;
   }
 
   .feature {
@@ -332,11 +355,9 @@ a {
 
   .icon {
     display: block !important;
+    // font-size: 20px !important;
   }
 
-  .feature-section {
-    padding: 7.5% 0 !important;
-  }
 
   .feature-text-wrap {
     display: none;
@@ -351,6 +372,9 @@ a {
 
   .feature-root-wrap {
     // align
+    // width: 100% !important;
+    align-self: center;
+    margin: 0 auto !important;
   }
 
   .feature-title {
@@ -379,7 +403,7 @@ a {
       .home-image {
         // icon
         order: 1;
-        width: 300px !important;
+        width: 250px !important;
         margin-bottom: 5%;
       }
     }
